@@ -12,7 +12,7 @@ Aprimorando minhas habilidades em UX/UI usando HTML e CSS para desenvolver inter
 - **CSS**: Responsável pela estilização e aparência visual da página.
 
 ## Como visualizar 
-1.Acesse a o projeto no seguinte link: [Ux_training.](https://victorlpsrd.github.io/ux_treino/planos.html)<br>
+1.Acesse a o projeto no seguinte link: [Ux_training.](https://victorlpsrd.github.io/ux_treino/index.html)<br>
 2.Divirta-se ao analisar esse pequeno projeto e deixe seus comenatrios!!
 
 ## Estrutura do Projeto
