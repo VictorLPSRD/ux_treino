@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/76fcd07f-b171-49c7-8a77-6177ad5a6122/BR-pt-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.841), rgba(0, 0, 0, 0.915), rgba(0, 0, 0, 0.89)  60%, transparent 100%);
+}
+
+
+
+.cabecalho {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #323232;
+    position: fixed;
+    width: 100%;
+    background-color: #000000; 
+    z-index: 999;
+}
+
+.cabecalho .logo {
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    height: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.989) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.931) 0px 18px 36px -18px inset;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu #Registra,
+.cabecalho .menu #Login {
+    font-family: "ChaletComprime";
+    font-size: 10px;
+    text-decoration: none;
+    padding: 1.3em 3em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fefefe;
+    background-color: #000000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 0px 1px #ffffff; 
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.cabecalho .menu #Registra:hover,
+.cabecalho .menu #Login:hover {
+    background-color: #ff0000; 
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.994);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.cabecalho .menu #Registra:active,
+.cabecalho .menu #Login:active {
+    transform: translateY(-1px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 10px 1px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute; 
+    top: 50%; 
+    left: 48%;
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(184, 184, 184, 0.681), 0 4px 6px -4px rgba(251, 251, 251, 0.746);
+    border-radius: 10px;
+    background-color: #000000;
+    z-index: 4;
+    background: linear-gradient(45deg, #000000ea 0%, #070c0f 100%);
+}
+
+.card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 10px 1px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute; 
+    top: 50%; 
+    left: 70%;
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(184, 184, 184, 0.681), 0 4px 6px -4px rgba(251, 251, 251, 0.746);
+    border-radius: 10px;
+    background-color: #000000;
+    z-index: 4;
+    background: linear-gradient(45deg, #000000ea 0%, #070c0f 100%);
+}
+
+.card-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 260px;
+    padding: 10px 1px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute; 
+    top: 50%; 
+    left: 26%;
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(184, 184, 184, 0.681), 0 4px 6px -4px rgba(251, 251, 251, 0.746);
+    border-radius: 10px;
+    background-color: #000000;
+    z-index: 4;
+    background: linear-gradient(45deg, #000000ea 0%, #070c0f 100%);
+}
+
+
+.content {
+    padding: 20px;
+}
+
+.content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+  
+  .content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.64);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+    .btn {
+        --color: #f80000;
+        --color2: rgb(247, 247, 247);
+        padding: 0.8em 1.75em;
+        background-color: transparent;
+        border-radius: 6px;
+        border: .3px solid var(--color);
+        transition: .5s;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        z-index: 1;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: 'Roboto', 'Segoe UI', sans-serif;
+        text-transform: uppercase;
+        color: var(--color);
+       }
+       
+       .btn::after, .btn::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        transform: skew(90deg) translate(-50%, -50%);
+        position: absolute;
+        inset: 50%;
+        left: 25%;
+        z-index: -1;
+        transition: .5s ease-out;
+        background-color: var(--color);
+       }
+       
+       .btn::before {
+        top: -50%;
+        left: -25%;
+        transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+       }
+       
+       .btn:hover::before {
+        transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+       }
+       
+       .btn:hover::after {
+        transform: skew(45deg) translate(-50%, -50%);
+       }
+       
+       .btn:hover {
+        color: var(--color2);
+       }
+       
+       .btn:active {
+        filter: brightness(.7);
+        transform: scale(.98);
+       }

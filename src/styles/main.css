@@ -1,0 +1,259 @@
+body{
+    background-color: #000000;
+	color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  
+}
+
+.cabecalho {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #323232;
+    position: fixed;
+    width: 100%;
+    background-color: #000000; 
+    z-index: 999;
+}
+
+.cabecalho .logo {
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+    height: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.989) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.931) 0px 18px 36px -18px inset;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu #Registra,
+.cabecalho .menu #Login {
+    font-family: "ChaletComprime";
+    font-size: 10px;
+    text-decoration: none;
+    padding: 1.3em 3em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fefefe;
+    background-color: #000000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 0px 1px #ffffff; 
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.cabecalho .menu #Registra:hover,
+.cabecalho .menu #Login:hover {
+    background-color: #ff0000; 
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.994);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.cabecalho .menu #Registra:active,
+.cabecalho .menu #Login:active {
+    transform: translateY(-1px);
+}
+
+ 
+.home {
+	display: flex;
+	position: relative;
+
+}
+.home.imagem-fundo{
+    display: flex;
+	position: relative;
+	object-fit: cover;
+}
+
+.home::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.816), rgba(0, 0, 0, 0.882), rgba(0, 0, 0, 0.882)  60%, transparent 100%);
+}
+
+.home .informacoes {
+  top: 100px;
+  position: absolute;
+	z-index: 1;
+	min-height: calc(100vh - 80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+	padding: 75px 80px 100px 170px;
+	max-width: 780px;
+}
+
+.home .informacoes h1 {
+  font-family: "ChaletComprime";
+	font-size: 40px;
+}
+
+.home .informacoes p {
+  font-family: "Chalet";
+	font-size: 18px;
+	line-height: 1.6;
+  padding: 30px;
+}
+
+.home .informacoes .planos {
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: auto; 
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.home .informacoes .planos{
+  background: rgb(255, 0, 0);
+  box-shadow: 0 0 25px rgb(255, 0, 0);
+}
+
+.home .informacoes .planos:hover {
+    box-shadow: 0 0 5px rgb(255, 4, 0),
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(255, 0, 0),
+                0 0 100px rgb(255, 0, 0);
+  }
+
+.home .informacoes button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+  
+  .home .informacoes button {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 25px rgb(255, 0, 0);
+  }
+  
+  .home .informacoes button:hover {
+    box-shadow: 0 0 5px rgb(255, 4, 0),
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(255, 0, 0),
+                0 0 100px rgb(255, 0, 0);
+  }
+  
+
+  .cartao {
+    position: fixed;
+    align-items: center;
+    bottom: 55px; 
+    right: 10px; 
+    width: 25%;
+    max-width: 500px;
+    background-color: black;
+    padding: 10px;
+    z-index: 999;
+    border-radius: 20px ;
+    border-bottom: 1px solid #fb0000;
+    height: auto; 
+    -webkit-box-shadow: 10px 10px 5px 4px rgba(232,216,232,1);
+    -moz-box-shadow: 10px 10px 5px 4px rgb(116, 116, 116);
+    box-shadow: 10px 10px 5px 4px rgb(15, 14, 15);
+    }
+
+.carta_informacoes h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+.carta_informacoes p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+}
+
+
+.socials-container {
+  border-radius: 40px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 60px;
+  background-color: #ff0000;
+}
+
+  .social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+  }
+  .google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+  }
+  .instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .social svg {
+    fill: white;
+    height: 20px;
+  }
+  

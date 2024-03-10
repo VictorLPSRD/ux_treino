@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/76fcd07f-b171-49c7-8a77-6177ad5a6122/BR-pt-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.816), rgba(0, 0, 0, 0.882), rgba(0, 0, 0, 0.882)  60%, transparent 100%);
+  }
+  
+  .cabecalho {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #323232;
+  position: fixed;
+  width: 100%;
+  background-color: #000000; 
+  z-index: 999;
+  }
+  
+  .cabecalho .logo a{
+  font-family: "ChaletComprime";
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  height: 10px;
+  display: flex;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.989) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.931) 0px 18px 36px -18px inset;
+  }
+  
+  .cabecalho .menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .cabecalho .menu #login {
+    font-family: "ChaletComprime";;
+    text-decoration: none;
+    padding: 1.3em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fefefe;
+    background-color: #000000;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 0px 1px #ffffff; 
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .cabecalho .menu #login:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.994);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .cabecalho .menu #login:active{
+    transform: translateY(-1px);
+  }
+  
+  .form-container {
+    width: 350px;
+    height: 530px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+    
+    .title {
+      text-align: center;
+      font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      margin:0;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    
+    .sub-title {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-family:"Chalet";
+      padding: 15px;
+    }
+    
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 15px;
+    }
+    
+    .input {
+      border-radius: 20px;
+      border: 1px solid #c0c0c0;
+      outline: 0 !important;
+      box-sizing: border-box;
+      padding: 12px 15px;
+    }
+    
+    .form-btn {
+      color: rgb(246, 0, 0);
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid rgb(255, 7, 7);
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      background: transparent;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+    .form-btn:hover {
+      color: white;
+    }
+    
+    .form-btn::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      top: 0;
+      left: -40px;
+      transform: skewX(45deg);
+      background-color: rgb(255, 8, 8);
+      z-index: -1;
+      transition: all 1s;
+    }
+    
+    .form-btn:hover::before {
+      width: 160%;
+    }
+    
+    .sign-up-link {
+      margin-left: 1px;
+      font-size: 14px;
+      text-decoration: underline;
+      text-decoration-color: teal;
+      color: teal;
+      cursor: pointer;
+      font-weight: 800;
+      padding: 10px;
+    }
+    
+    .buttons-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 20px;
+      gap: 15px;
+    }
+    
+    .apple-login-button,
+        .google-login-button {
+      border-radius: 20px;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "ChaletComprime";
+      font-size: 14px;
+      gap: 5px;
+    }
+    
+    .apple-login-button {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #000;
+    }
+    
+    .google-login-button {
+      border: 2px solid #747474;
+    }
+    
+    .apple-icon,
+        .google-icon {
+      font-size: 15px;
+      margin-bottom: 1px;
+    }
